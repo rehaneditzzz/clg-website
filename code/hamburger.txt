@@ -1,0 +1,32 @@
+{/* Mobile Hamburger Menu */}
+      {/* <button
+        className="md:hidden focus:outline-none"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-8 h-8 text-white"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button> */}
+
+      {/* Mobile Menu */}
+      {/* {isMenuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 text-white flex flex-col items-start gap-4 p-4">
+          {item.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className="block w-full text-sm px-4 py-2 rounded hover:bg-gray-700 transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)} // Close menu on click
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      )} */}

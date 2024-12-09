@@ -1,0 +1,58 @@
+import Card from "./Card";
+
+const Modal = () => {
+  return (
+    <div className="absolute h-3/5 w-3/5 top-24 left-72 bg-white z-20 rounded-lg p-7 overflow-hidden">
+      <div className="grid grid-cols-3 gap-5 h-full">
+        
+        {/* Scrollable paragraph content */}
+        <div className="overflow-y-auto h-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-200">
+            
+            {/* heading */}
+
+            <div className="head select-none cursor-pointer">
+  <h1 className="text-2xl font-semibold select-none">Programs Offered</h1>
+
+  <div className="subheading mt-4">
+    <ul className="flex flex-col gap-4">
+      <li className="relative">
+        <h2 className="text-lg hover:bg-gray-200 hover:opacity-70 transition-all duration-300 p-2 rounded-md">Under Graduate Programs</h2>
+      </li>
+      <li className="relative">
+        <h2 className="text-lg hover:bg-gray-200 hover:opacity-70 transition-all duration-300 p-2 rounded-md">Post Graduate Programs</h2>
+      </li>
+      <li className="relative">
+        <h2 className="text-lg hover:bg-gray-200 hover:opacity-70 transition-all duration-300 p-2 rounded-md">Ph.D.</h2>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+        </div>
+
+        {/* Cards Section */}
+        <div className="flex flex-col gap-4 p-4 overflow-y-auto h-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-200">
+          <Card title="MBA in Management Studies" duration="2 Years" type="Full Time" />
+          <Card title="MBA in Marketing" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Marketing" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Marketing" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Marketing" duration="1 Year" type="Part Time" />
+        </div>
+
+        {/* Cards Section */}
+        <div className="flex flex-col gap-4 p-4 overflow-y-auto h-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-200">
+          <Card title="MBA in Human Resources" duration="2 Years" type="Full Time" />
+          <Card title="MBA in Finance" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Finance" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Finance" duration="1 Year" type="Part Time" />
+          <Card title="MBA in Finance" duration="1 Year" type="Part Time" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Modal;
